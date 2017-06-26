@@ -1,0 +1,101 @@
+
+.logo {
+  max-width: 20%;
+  margin: 2%;
+  padding-top: 2%;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-nav;
+  font-weight: $font-weight-md;
+  font-size: $text-md;
+  position: fixed;
+  z-index: 1;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: $red-primary;
+  box-shadow: 0px 6px 20px 0px #9E9E9E;
+}
+
+.site-nav ul {
+  display: none;
+}
+
+.nav-item {
+  list-style: none;
+  margin: auto;
+}
+
+.nav-links{
+  text-decoration: none;
+  color: $dark-primary;
+}
+
+.nav-links:hover {
+  color: $light-primary;
+}
+
+.mobile-nav {
+  background-color: $light-background;
+  width: 60%;
+  z-index: 1;
+  margin-left: auto;
+}
+
+.mobile-nav ul {
+  padding: 0;
+  text-align: center;
+  line-height: 2;
+}
+
+.mb-nav-item {
+  list-style: none;
+}
+
+.mb-nav-links {
+  text-decoration: none;
+  color: $dark-primary;
+  padding: 7px;
+  display: block;
+}
+
+.mb-nav-links:hover {
+  color: $red-primary;
+  background-color: $light-bg-hover;
+}
+
+.closeHidden,
+.mobileHidden,
+.burgerHidden {
+  display: none;
+}
+
+.mobile-show,
+.close-show{
+  display:block;
+}
+
+@media (min-width:$breakpoint-tablet){
+
+  .logo {
+    max-width: 7%;
+    margin: 1%;
+    padding-top: 0.5%;
+  }
+
+  .burger-icon {
+    max-width: 6%;
+    margin: 1%;
+    display: none;
+  }
+
+  .site-nav ul {
+    display: flex;
+    width: 85%;
+  }
+}
